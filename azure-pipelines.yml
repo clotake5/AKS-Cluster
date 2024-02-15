@@ -1,4 +1,12 @@
 # Docker
+- task: KubernetesManifest@1
+  inputs:
+    action: 'deploy'
+    connectionType: 'azureResourceManager'
+    azureSubscriptionConnection: 'Free Trial(f6ba80d1-ed08-4e2e-926c-6119c4e6325a)'
+    azureResourceGroup: 'ckResourceGroup'
+    kubernetesCluster: 'ckAKSCluster'
+    useClusterAdmin: true
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
